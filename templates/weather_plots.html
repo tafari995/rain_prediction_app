@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather at {{ (city_lat,city_long) }}</title>
+</head>
+<body>
+    <h1>Weather Plots over Time</h1>
+    <img src="{{ url_for('w_plot', city_lat=city_lat, city_long=city_long, s_date=s_date, e_date=e_date) }}" height="600" width=1050 >
+    
+    <a href="/weather">Back</a>
+</body>
+</html>

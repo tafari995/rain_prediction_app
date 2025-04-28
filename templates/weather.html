@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary Weather Data</title>
+</head>
+<body>
+    <h1>Weather Location</h1>
+    <ul>
+        <li>Coordinates: {{ (lat, long) }} </li> 
+        <li>Elevation:   {{ elevation }} m asl</li>
+        <li>Timezone:    {{ timezone }}   </li>        
+    </ul>
+    <ul>
+        <li><a href="/weather/rain_prediction"> Rain Forecast</a></li>
+        <li><a href="/weather/weather_plots"> Weather Plots</a></li>
+        <li><a href="/">Back</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Taf's Weather App</h1>
+    <form action="/weather" method="post" enctype="multipart/form-data">
+        <label for="latitude">Enter latitude:</label>
+        <input type="text" id="latitude" name="latitude">
+        <label for="longitude">Enter longitude:</label>
+        <input type="text" id="longitude" name="longitude">
+        <label for="start_date">Enter start date:</label>
+        <input type="text" id="start date" name="start date">
+        <label for="end_date">Enter end date:</label>
+        <input type="text" id="end date" name="end date">
+        <button type="submit">Get Weather</button>
+    </form>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
+
