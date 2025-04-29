@@ -10,7 +10,9 @@ from numpy import array, flip
 from sqlalchemy import create_engine 
 from rainpred import rpred
 
-mysql_conn_engine = create_engine('mysql+mysqldb://<username>:<password>@localhost/weather')
+#feel free to replace username and !Password0 with your own username and 
+# secure enough password (1 uppper, 1 number, 1 special, 8 chars)
+mysql_conn_engine = create_engine('mysql+mysqldb://username:!Password0@localhost/weather')
 connection = mysql_conn_engine.connect()
 
 #Dates are YYYY-MM-DD for open meteo
