@@ -1,0 +1,12 @@
+openmeteo_requests
+requests_cache
+retry_requests 
+pandas 
+numpy 
+sqlalchemy 
+torch
+numpy
+scikit-learn
+matplotlib
+io
+flask 
